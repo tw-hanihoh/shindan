@@ -1,0 +1,175 @@
+
+body{
+	font-size:20px !important;
+	margin:0px !important;
+	padding:0px !important;
+	-webkit-text-size-adjust: 100%;
+}
+
+
+@media (min-width:500px){
+	.mainframe{
+	max-width:480px !important;
+	width:90% !important;
+	padding:20px;
+	margin-top:30px !important;
+	margin-bottom:30px;
+	border:1px solid #ccc !important;
+	}
+	.mainframe_btm{
+	padding:20px;
+	}
+}
+@media (max-width:500px){
+	.mainframe{
+	width:97% !important;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:10px !important;
+	padding-right:10px !important;
+	margin-top:30px !important;
+	margin-bottom:30px;
+	border:1px solid #ccc !important;
+	}
+	.mainframe .contents{
+		padding:0px !important;
+	}
+}
+
+
+.logo .topLogo{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:30px;
+}
+
+.logoimage{
+	max-width:100%;
+}
+
+.shindan_note{
+	margin-left:auto;
+	margin-right:auto;
+	padding:15px;
+	font-size:20px;
+	max-width:94%;
+}
+
+.letstry{
+	padding-top:10px;
+	padding-bottom:30px;
+	text-align:center;
+}
+.letstryimage{
+	max-width:100%;
+}
+
+.copyright{
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	clear:both;
+	font-size:14px;
+}
+.ad1,.ad2{
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+.common_newad_top{
+	background-color:#FFFFFF;
+	padding:10px;
+	font-size:14px;
+	border-bottom:1px dashed #89c;
+}
+.common_newad_bottom{
+	background-color:#FFFFFF;
+	padding:10px;
+	font-size:16px;
+	border-top:1px dashed #89c;
+	line-height:200%;
+	text-align:left;
+}
+
+/*
+question page
+*/
+
+.q_pretext{
+	text-align:center;
+	margin-top:15px;
+	margin-bottom:15px;
+	font-size:20px;
+}
+
+.questionLabel{
+	display:none;
+	font-size:20px;
+	margin-top:15px;
+	margin-bottom:15px;
+	padding:15px;
+	border-radius:10px;
+	-webkit-border-radius:10px; 
+	-moz-border-radius:10px;
+	border:1px solid #967;
+	color:#856;
+	font-weight:bold;
+}
+.answer{
+	display:none;
+	font-size:20px;
+	margin-bottom:15px;
+	padding-left:20px;
+}
+.answer label{
+	font-weight:normal !important;
+}
+.resultbtnblock{
+	display:none;
+	clear:both;
+	text-align:center;
+	padding:20px;
+	border-radius:10px;
+	-webkit-border-radius:10px; 
+	-moz-border-radius:10px;
+	border:1px solid #ccc;
+	margin-bottom:15px;
+	margin-left:20px;
+	margin-right:20px;
+}
+.q_btn{
+	margin-top:20px;
+	margin-bottom:100px;
+	max-width:350px;
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.pre_q_btn{
+	float:left;
+}
+.next_q_btn{
+	float:right;
+}
+.resultbtn{
+	max-width:100%;
+}
+
+/*
+result
+*/
+
+.resultlabel{
+	padding:20px;
+	font-size:24px;
+}
+.resultdata{
+	padding:20px;
+	font-size:24px;
+}
+.resultnotice{
+	padding:20px;
+	font-size:20px;
+}

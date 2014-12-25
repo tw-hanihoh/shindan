@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+
+/* -------------------------------------------------------
+html
+------------------------------------------------------- */
+html {
+	width: 100%;
+	height: 100%;
+	color: #000000;
+}
+
+/* -------------------------------------------------------
+body
+------------------------------------------------------- */
+body {
+	width: 100%;
+	height: 100%;
+	font-style: normal;
+	color: #272727;
+	background-color:#fff;
+	margin:0px;
+	padding-top:0px;
+	line-height:125%;
+	font-size:18px;
+}
+
+body {
+	font-family: helvetica, "Hiragino Kaku Gothic Pro W3", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", "MS P Gothic", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+	/* for IE7 */
+	*+html body {
+	font-family: "メイリオ", "ＭＳ Ｐゴシック";
+	}
+
+	/* for IE6 */
+	* html body {
+	font-family: "ＭＳ Ｐゴシック";
+	}
+
+
+/* -------------------------------------------------------
+mainframe
+------------------------------------------------------- */
+.mainframe{
+	background-image:url(http://tw.hanihoh.com/image/bgtop_s.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+	padding-top:250px;
+	width:100%;
+	margin:auto;
+	background-color:#FFF;
+	border:1px solid #ddd;
+	padding-left:0px !important;
+	padding-right:0px !important;
+}
+.mainframe_btm{
+	background-image:url(../../image/bgbottom_s.jpg);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	width:100%;
+	padding-bottom:350px;
+}
+.mainframe_contents{
+	margin:auto;
+	width:100%;
+	padding:10px;
+}
+
+.star1{
+	font-size:36px;
+	color:#ae4848;
+	line-height:40px;
+}
+.star2{
+	font-size:36px;
+	color:#977121;
+	line-height:40px;
+}
+.star3{
+	font-size:36px;
+	color:#b77194;
+	line-height:40px;
+}
+.star4{
+	font-size:36px;
+	color:#7ca791;
+	line-height:40px;
+}
+.star5{
+	font-size:36px;
+	color:#974f26;
+	line-height:40px;
+}
+.star_off{
+	font-size:36px;
+	color:#e3e3e3;
+	line-height:40px;
+}
